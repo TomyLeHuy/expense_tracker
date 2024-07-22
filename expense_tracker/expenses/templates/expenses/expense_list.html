@@ -1,0 +1,25 @@
+{% extends 'expenses/base.html' %}
+
+{% block content %}
+<h2>All Expenses</h2>
+
+{% for item in categorized_expenses %}
+    <h3>{{ item.category }} - Total: {{ item.total }} €</h3>
+    <ul>
+        {% for expense in item.expenses %}
+            <li>
+                {{ expense.title }} - {{ expense.amount }}€ - {{ expense.date }}
+                <div class="button-group">
+                    <a href="{% url 'edit_expense' expense.pk %}" class="edit-button">Edit</a>
+                    <a href="{% url 'delete_expense' expense.pk %}" class="delete-button">Delete</a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+
+<div class="center">
+    <a href="{% url 'clear_expenses' %}">Clear All Expenses</a>
+</div>
+
+{% endblock %}

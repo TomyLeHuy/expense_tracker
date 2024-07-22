@@ -1,0 +1,11 @@
+{% extends 'expenses/base.html' %}
+
+{% block content %}
+<h2>Clear All Expenses</h2>
+<p><strong>Are you sure you want to clear all expenses?</strong> </p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" style="background-color: red; color: white; border: none; padding: 10px 20px; cursor: pointer;">Yes, Clear All Expenses</button>
+    <a href="{% url 'expense_list' %}" style="margin-left: 20px; text-decoration: none; padding: 10px 20px; background-color: #007bff; color: white; border-radius: 4px;">Cancel</a>
+</form>
+{% endblock %}

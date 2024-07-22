@@ -1,0 +1,143 @@
+/* Existing styles... */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+p {
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #343a40;
+    text-align: center;
+}
+
+nav {
+    background-color: #343a40;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center align the list */
+}
+
+li {
+    background-color: #f1f1f1;
+    margin: 2px 0; /* Adjust margin to make boxes closer */
+    padding: 5px 10px; /* Adjust padding to make boxes smaller */
+    border-radius: 4px;
+    display: inline-block; /* Make the list items inline-block to center them */
+    width: 60%; /* Adjust width to make boxes narrower */
+}
+
+a, button {
+    text-decoration: none;
+    padding: 5px 10px; /* Make links and buttons look like buttons */
+    border-radius: 4px;
+    margin: 2px;
+    text-align: center; /* Center align text within the button */
+    display: inline-block;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    min-width: 80px; /* Set a minimum width for consistency */
+}
+
+a:hover, button:hover {
+    opacity: 0.8;
+}
+
+a.edit-button, button.edit-button {
+    background-color: #28a745; /* Green background for Edit */
+    color: white;
+}
+
+a.delete-button, button.delete-button {
+    background-color: #dc3545; /* Red background for Delete */
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form elements */
+}
+
+form input, form select, form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    width: 80%; /* Adjust width as needed */
+}
+
+form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center a, .center button {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.center a:hover, .center button:hover {
+    background-color: darkred;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group form {
+    display: inline;
+    margin-left: 5px;
+}
+.more-projects {
+    display: none;
+}
